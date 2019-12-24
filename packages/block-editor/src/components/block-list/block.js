@@ -573,6 +573,7 @@ function BlockListBlock( {
 						// Allow subpixel positioning for the block movement animation.
 						__unstableAllowVerticalSubpixelPosition={ moverDirection !== 'horizontal' && wrapper.current }
 						__unstableAllowHorizontalSubpixelPosition={ moverDirection === 'horizontal' && wrapper.current }
+						__unstableBoundaryParent
 					>
 						{ ! hasAncestorCapturingToolbars && ( shouldShowContextualToolbar || isForcingContextualToolbar.current ) && renderBlockContextualToolbar() }
 						{ hasAncestorCapturingToolbars && ( shouldShowContextualToolbar || isForcingContextualToolbar.current ) && (
